@@ -16,7 +16,7 @@ namespace ChangeResource
             string prversion = Console.ReadLine();
             Console.WriteLine("Copyright(2001-2020):");
             string copyright = Console.ReadLine();
-            int appvers = 68;
+            int[] appvers =new int[] { 68 , 69, 70};
 
 
             string[] dirs = Directory.GetFiles(path, "*eng.dll", SearchOption.AllDirectories);
