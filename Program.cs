@@ -27,7 +27,7 @@ namespace ChangeResource
                 versionResource.LoadFrom(dir);
 
                 versionResource.FileVersion = appversion + ".0.0";
-                versionResource.ProductVersion = appversion + ".0.0";
+                versionResource.ProductVersion = copyright + ".0.0";
 
                 StringFileInfo stringFileInfo = (StringFileInfo)versionResource["StringFileInfo"];
                 stringFileInfo["FileVersion"] = appversion + ".0.0\0";
