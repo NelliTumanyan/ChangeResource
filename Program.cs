@@ -8,7 +8,7 @@ namespace ChangeResource
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Entr Screen path:");
+            Console.WriteLine("Please enter Screen path:");
             string path = Console.ReadLine();
             Console.WriteLine("Module Version(6.7, 6.8):");
             string appversion = Console.ReadLine();
