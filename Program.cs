@@ -16,6 +16,7 @@ namespace ChangeResource
             string prversion = Console.ReadLine();
             Console.WriteLine("Copyright(2001-2020):");
             string copyright = Console.ReadLine();
+            int appvers = 68;
 
 
             string[] dirs = Directory.GetFiles(path, "*eng.dll", SearchOption.AllDirectories);
@@ -27,7 +28,7 @@ namespace ChangeResource
                 versionResource.LoadFrom(dir);
 
                 versionResource.FileVersion = appversion + ".0.0";
-                versionResource.ProductVersion = copyright + ".0.0";
+                versionResource.ProductVersion = appvers.ToString() + ".0.0";
 
                 StringFileInfo stringFileInfo = (StringFileInfo)versionResource["StringFileInfo"];
                 stringFileInfo["FileVersion"] = appversion + ".0.0\0";
